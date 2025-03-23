@@ -74,7 +74,7 @@ p{
 .page{
     height: 800px;
     width: 1300px;
-    background-image: url("E:\\Projects\\tourist\\tourism\\public\\image3.jpg");
+    background-image: url("tourism\\public\\image3.jpg");
     background-size: cover;
     
     position: relative;
