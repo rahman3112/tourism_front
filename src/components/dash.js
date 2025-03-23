@@ -4,7 +4,7 @@ import "./dash.css";
 const Dash = () => {
   const fetchLocations = async (city) => {
     try {
-      const response = await fetch(`http://localhost:5000/locations/${city}`);
+      const response = await fetch(`https://tourism-backend-e55e.onrender.com/locations/${city}`);
       const data = await response.json();
       console.log("Fetched locations:", data.results);
       if (data.results) {

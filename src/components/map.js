@@ -18,7 +18,7 @@ const Map = () => {
   useEffect(() => {
     const fetchTouristPlaces = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/locations/${city.toUpperCase()}`);
+        const response = await fetch(`https://tourism-backend-e55e.onrender.com/locations/${city.toUpperCase()}`);
         const data = await response.json();
         console.log("Fetched data:", data.results);
         if (data.results) {
