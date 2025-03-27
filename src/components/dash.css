@@ -1,51 +1,76 @@
-.page1{
-    background-color: #ffb703;
-    height: 100pc;
-    position: relative;
-    top: -50px;
+.page1 {
+    background: linear-gradient(to bottom, black, rgb(152, 236, 177));
+    color: white;
+    font-size: 20px;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.cat{
-    padding-top: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
+
+.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    width: 60%;
+    max-width: 400px;
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: 2px solid white;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.search-bar:focus {
+    border-color: black;
+    background: white;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    left: 5px;
+    top: -20px;
+}
+
+.cat {
+    padding: 20px;
     height: 400px;
     width: 340px;
     border-radius: 20px;
     background-color: white;
-    position: relative;
-    top: 70px;
-    left: 440px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
 }
-.cat1{
+
+.cat-btn {
+    width: 100%;
     height: 60px;
     border-radius: 15px;
     border: 1px solid;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out;
+    background: none;
+    color: black;
 }
-.cat2{
-    height: 60px;
-    border-radius: 13px;
-    border: 1px solid;
 
-}
-.cat3{
-    height: 60px;
-    border-radius: 13px;
-    border: 1px solid;
-}
-.cat4{
-    height: 60px;
-    border-radius: 13px;
-    border: 1px solid;
-}
-.cat5{
-    height: 60px;
-    border-radius: 13px;
-    border: 1px solid;
-}
-button:hover{
-   cursor: pointer;
-   border: 1px solid;
+.cat-btn:hover {
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
 }

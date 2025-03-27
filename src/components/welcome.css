@@ -81,7 +81,7 @@ p{
 }
 .title{
     position: relative;
-    left: -550px;
+    left: -0px;
     top: 25px;
 }
 .search{
@@ -102,7 +102,7 @@ p{
     position: relative;
     left: 420px;
     top: -70px;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 70px;
     font-weight: 500;
     height: 30px;
@@ -116,7 +116,7 @@ p{
     left: 450px;
     color: white;
     top: -70px;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 1px solid white;
     background: none;
     width: 70px;
@@ -132,16 +132,53 @@ p{
 }
 .start{
     height: 30px;
-    border-radius: 10px;
+    border-radius: 20px;
     position: relative;
-    top: 200px;
+    top: 0px;
     color: white;
     width: 90px;
-    border: 1px solid ;
-    background: none;
+    font-size: 15px;
+    border: none ;
+    background-color: rgb(25, 87, 87);
     backdrop-filter: blur(10px);
 }
 .start:hover{
     border: 1px solid;
-    background-color: rgb(255, 200, 0);
+    background-color: rgb(25, 87, 87);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }
+
+.slider-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+.image-slider {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-wrapper {
+    display: flex;
+    width: max-content; /* Allows infinite scrolling */
+    animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
